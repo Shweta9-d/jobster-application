@@ -21,7 +21,12 @@ const Register = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target);
+    //empty values
+    const { name, email, password, isMember } = values;
+    if (!email || !password || (!isMember && !name)) {
+      console.log("Please Fill Out All fields");
+      return;
+    }
   };
 
   const toggleMember = () => {
