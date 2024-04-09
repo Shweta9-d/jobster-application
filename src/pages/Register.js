@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Logo } from "../components";
 import Wrapper from "../assets/wrappers/RegisterPage";
 import FormRow from "../components/FormRow";
+import { toast } from "react-toastify";
 
 const initialState = {
   name: "",
@@ -24,7 +25,7 @@ const Register = () => {
     //empty values
     const { name, email, password, isMember } = values;
     if (!email || !password || (!isMember && !name)) {
-      console.log("Please Fill Out All fields");
+      toast.error("Please Fill Out All fields");
       return;
     }
   };
