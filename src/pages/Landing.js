@@ -17,9 +17,11 @@ const Landing = () => {
             job <span>tracking</span> app
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            tempora facilis laboriosam quo fugit, doloribus deserunt nam
-            nesciunt? Excepturi, quae.
+            Jobster makes time and job tracking a lot easier by creating tasks
+            and to-dos on projects, and categorizing projects by client. When
+            you start working on a specific task, all you have to do is choose a
+            project, write an optional description of what you're doing, and
+            start the timer.
           </p>
           <Link to="/register" className="btn btn-hero">
             Login/Register
