@@ -1,5 +1,5 @@
 import React from "react";
-import { Landing, Error, Register } from "./pages";
+import { Landing, Error, Register, ProtectedRoute } from "./pages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 //import styled from "styled-components";
 import { ToastContainer } from "react-toastify";
@@ -11,7 +11,6 @@ import {
   Stats,
   Profile,
 } from "./pages/dashboard";
-import ProtectedRoute from "./pages/ProtectedRoute";
 
 function App() {
   return (
